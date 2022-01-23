@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+body{
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+		/* CONTAINER PRINCIPAL */
+
+.container-padre{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+		/* CABECERA DEL CV */
+
+header{
+	width:100vh;
+	height:250px;
+	padding:30px;
+	text-align:center;
+	background-color:#DEB399;
+	box-shadow:10px 10px 5px rgba(30,30,30, 0.6);
+	position:fixed;
+	top:0;
+}
+header h1{
+	margin-top:20px;
+	padding-bottom:10px;
+	letter-spacing:4px;
+	font-size:3em;
+	color:#FAEBD7;
+	border-bottom:2px solid #000000;
+}
+header h2{
+	padding-top:15px;
+	letter-spacing:10px;
+	font-size:1.8em;
+	color:#FAEBD7;
+}
+
+	/* H2 DE TODA LAS SECCIONES */
+
+.perfil-cv h2, .formacion-cv h2, .herramientas-cv h2, .idiomas-cv h2, .title-experiencia h2{
+	padding:10px;
+	font-size:2.5em;
+	color:#FAEBD7;
+	text-align:center;
+	border-bottom:2px solid #000000;
+}
+
+	/* ICONOS DE TODAS LAS SECCIONES */
+
+.caja-1 i, .formacion-cv i, .idiomas-cv i, .final-cv i{
+	padding:20px;
+	font-size:2em;
+}
+	
+	/* SECCIÓN FOTO + DATOS */
+
+.caja-1{
+	width:100vh;
+	padding:20px;
+	margin-top:250px;	
+	border:5px solid #545548;
+	background-color:#837f78;
+	text-align: center;
+}
+.caja-1 img{
+	width:100%;
+	padding:20px;
+	border:3px solid #FAEBD7;
+}
+.caja-1 .name{
+	padding:20px;
+	font-size:1.6em;
+	font-weight:700;
+	color:#FAEBD7;
+	border-bottom:2px solid #000000;
+}
+.fa-birthday-cake{
+	color:#FFDBDA;
+}
+.fa-thumbtack{
+	color:#D62839;
+}
+.fa-brain{
+	color:#BAFF29;
+}
+.caja-1 p{
+	font-size:1.6em;
+	font-weight:700;
+	color:#FAEBD7;
+}
+
+	/* SECCIÓN PERFIL + FORMACIÓN ACADÉMICA */
+
+.caja-2{
+	width:100vh;
+	min-height:400px;
+	padding:20px;
+	background-color:#545548;
+	border:5px solid #FAEBD7;
+}
+.perfil-cv, .formacion-cv{
+	padding:30px;
+	border:1px solid #FAEBD7;
+	border-radius:10px;
+}
+.perfil-cv p{
+	padding:20px;
+	font-size:1.4em;
+	color:#FAEBD7;
+}
+.formacion-cv{
+	margin-top:20px;
+}
+.formacion-cv p{
+	font-size: 1.6em;
+	color:#FAEBD7;
+}
+
+	/* SECCIÓN HERRAMIENTAS + IDIOMAS */
+
+.caja-3{
+	width:100vh;
+	min-height:400px;
+	padding:20px;
+	border:5px solid #545548;
+	background-color:#837f78;
+}
+.herramientas-cv, .idiomas-cv{
+	padding:30px;
+	border:1px solid #FAEBD7;
+	border-radius:10px;
+	text-align:center;
+}
+.herramientas-cv i{
+	display:block;
+	color:#FAEBD7;
+	font-size:2em;
+	padding:20px;
+}
+.idiomas-cv{
+	margin-top:20px;
+}
+.fa-globe-asia{
+	color:#67AAF9;
+}
+.idiomas-cv p{
+	font-size: 1.6em;
+	color:#FAEBD7;
+}
+
+	/* SECCIÓN EXPERIENCIA */
+
+.caja-5{
+	width:100vh;
+	min-height:400px;
+	padding:20px;
+	background-color:#545548;
+	border:5px solid #FAEBD7;
+}
+.one-work, .two-work, .three-work{
+	margin-top:35px;
+	padding:30px;
+	border:1px solid #FAEBD7;
+	border-radius:10px;
+}
+h3{
+	padding:10px;
+	font-size:1.5em;
+	color:#FAEBD7;
+	border-bottom:2px solid #000000;
+	text-align:center;
+}
+.one-work p, .two-work p, .three-work p{
+	font-size: 1.6em;
+	color:#FAEBD7;
+	padding:30px;
+	text-align:left;
+}
+
+	/* SECCIÓN DE CONTACTO */
+
+footer{
+	width:100vh;
+	height:350px;
+	padding:30px;
+	text-align:center;
+	background-color:#DEB399;
+}
+footer h2{
+	padding-bottom:10px;
+	letter-spacing:4px;
+	font-size:3em;
+	color:#FAEBD7;
+	border-bottom:2px solid #000000;
+}
+.fa-mobile-alt{
+	color:#1E2EDE;
+}
+.fa-envelope{
+	color:#C52233;
+}
+footer p{
+	font-size: 1.8em;
+	font-weight:700;
+	color:#FAEBD7;
+}
+
+	/* A PARTIR DE AQUÍ MEDIA QUERIES */
+
+		/* TABLE */
+
+@media screen and (min-width:900px){
+	
+		/* SECCIÓN PERFIL + FORMACION ACADÉMICA */
+
+	.caja-2{
+		display:flex;
+	}
+	.perfil-cv{
+		margin-top:150px;
+		height:480px;
+	}
+	.formacion-cv{
+		margin-left:10px;
+	}
+
+		/* SECCIÓN HERRAMIENTAS + IDIOMAS */
+
+	.caja-3{
+		display:flex;
+		justify-content:center;
+		align-items: center;
+	}
+	.idiomas-cv{
+		margin-left:20px;
+	}
+}
+
+		/* ORDENADOR */
+
+@media screen and (min-width:1200px){
+
+	body{
+		background-image: linear-gradient(to right top, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
+	}
+	.container-padre{
+		flex-direction:row;
+		flex-wrap:wrap;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+		/* CABECERA DEL CV */
+
+	header{
+		width:90%;
+		height:150px;
+		font-size:.6em;
+	}
+	header h1{
+		margin-top:-10px;
+	}
+	
+		/* SECCIÓN FOTO + DATOS */
+
+	.caja-1{
+		width:50%;
+		height:800px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		margin-top:150px;
+	}
+	.caja-1 img{
+		width:70%;
+	}
+	.caja-1 .name{
+		font-size:1em;
+		letter-spacing:5px;
+	}
+	.caja-1 p{
+		font-size:1em;
+		font-weight:400;
+	}
+
+	.caja-2{
+		margin-top:225px;
+	}
+
+		/* SECCIÓN PERFIL + FORMACION ACADÉMICA */
+
+	.caja-2{
+		flex-direction:column;
+		width:50%;
+		margin-top:150px;
+	}
+	.perfil-cv{
+		height:auto;
+		margin-top:-5px;
+	}
+	.formacion-cv{
+		margin-right:10px;
+	}
+	.caja-2 h2{
+		font-size:1em;
+		letter-spacing:5px;
+	}
+	.perfil-cv p, .formacion-cv p{
+		font-size:1em;
+	}
+
+		/* SECCIÓN HERRAMIENTAS + IDIOMAS */
+
+	.caja-3{
+		width:100%;
+		display:flex;
+		flex-direction:column;
+	}
+	.herramientas-cv{
+		width:100%;
+	}
+	.idiomas-cv{
+		width:100%;
+	}
+	.caja-3 h2{
+		font-size:1em;
+		letter-spacing:5px;
+	}
+	.herramientas-cv i, .idiomas-cv p{
+		font-size:1em;
+	}
+	.idiomas-cv{
+		margin-right: 20px;
+	}
+
+		/* SECCION EXPERIENCIA */
+
+	.caja-5{
+		width:100%;
+	}
+	.caja-5 h2{
+		font-size:2em;
+		letter-spacing:5px;
+	}
+	.caja-5 h3{
+		font-size:1em;
+		letter-spacing:5px;
+	}
+	.caja-5 p{
+		font-size:1em;
+	}
+
+		/* SECCIÓN CONTACTAME */
+
+	footer{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		flex-direction:row;
+		width:100%;
+		height:100%;
+	}
+	footer h2{
+		font-size:2em;
+		letter-spacing:5px;
+		margin-right:100px;
+	}
+	footer p{
+		font-size:1em;
+	}
+	.final-cv{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+}
